@@ -4,9 +4,9 @@ processing. Therefore, one of the basics operations is the separation of moving 
 foreground from the static scene called background. The process mainly used is background subtraction
 [1]. In this process each input frame is compared to a background model (created with one or more
 reference frames) to determine which pixels belong to the background and which pixels belong to the foreground. 
-For this reason, it also is referred as foreground detection.
+For this reason, it also is referred as foreground detection. 
 
-# Figure 1.1 shows a generic background subtraction process.
+![](https://github.com/taboML/Gaussian-Mixture-Model-algorithm-VHDL/blob/main/imgs/background_sub.png)
 
 # Guassian Mixture Model algorithm
 Within background subtraction, one of most used algorithms is the Gaussian Mixture Model algorithm
@@ -22,6 +22,12 @@ subtraction [3]. Their proposed hardware architecture implements the Gaussian Mi
 algorithm due to its advantages respect to other algorithms. This work has been taken as reference
 to propose a hardware architecture that performs background subtraction correctly and, at the same
 time, to have a good reference point. 
+
+<p align="center">
+  <img src="https://github.com/taboML/Gaussian-Mixture-Model-algorithm-VHDL/blob/main/imgs/block_diagram.png" />
+</p>
+
+To test this project just make a testbench for GMM_circuit.vhd file
 
 
 # References
